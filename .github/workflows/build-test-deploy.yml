@@ -26,4 +26,11 @@ test:
     - run: npm test
 deploy:
     needs: test
+permissions:
+      deployments: write
+      contents: write
+      statuses: write
+      actions: write
+      pages: write     
+      id-token: write 
  
